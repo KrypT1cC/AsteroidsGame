@@ -28,4 +28,14 @@ class Spaceship extends Floater
     myPointDirection = (int)(Math.random() * 361);
     myColor = color(255);  
   }
+  
+  public double getCenterX()
+  {
+    return myCenterX;
+  }
+  
+  public double getCenterY()
+  {
+    return myCenterY;
+  }
 }
