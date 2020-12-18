@@ -1,5 +1,6 @@
 class Spaceship extends Floater
 {
+  private int shipHealth;
   public Spaceship()
   {
     corners = 4;
@@ -17,6 +18,7 @@ class Spaceship extends Floater
     myXspeed = myYspeed = 0;
     myColor = color(255);
     myPointDirection = 0;
+    shipHealth = 100;
   }
   
   public void EnterHyperspace()
@@ -37,5 +39,17 @@ class Spaceship extends Floater
   public double getCenterY()
   {
     return myCenterY;
+  }
+  public double getPointDirection()
+  {
+    return myPointDirection;
+  }
+  public int getShipHealth()
+  {
+    return shipHealth;
+  }
+  public void setShipHealth(int x)
+  {
+    shipHealth = x;
   }
 }
