@@ -100,12 +100,4 @@ public void keyPressed()
   {
     bullets.add(new Bullet(ship));
   }
-  else if (key == 'b')
-  {
-    int size = asteroids.size();
-    for (int i = 0; i < size; i++)
-    {
-      asteroids.remove(0);
-    }
-  }
 }
